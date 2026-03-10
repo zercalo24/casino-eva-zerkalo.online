@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://casino-eva-zerkalo.online/sitemap.xml
+Crawl-delay: 1
