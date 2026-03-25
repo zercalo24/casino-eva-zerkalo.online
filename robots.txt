@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
+Sitemap: https://casino-eva-zerkalo.online/sitemap.xml
+Host: https://casino-eva-zerkalo.online
