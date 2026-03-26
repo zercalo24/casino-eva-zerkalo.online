@@ -102,8 +102,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+<!-- AOS removed for mobile stability -->
+
 
 <style>
 :root {
@@ -412,6 +412,20 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; flex-wrap: wrap; }
 .footer-links a { color: var(--accent-light); font-size: 13px; }
 
+/* ── FADE IN ANIMATION - no JS needed ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.slot-card { animation: fadeInUp 0.4s ease forwards; }
+.slot-card:nth-child(2) { animation-delay: 0.05s; }
+.slot-card:nth-child(3) { animation-delay: 0.1s; }
+.slot-card:nth-child(4) { animation-delay: 0.15s; }
+.slot-card:nth-child(5) { animation-delay: 0.2s; }
+.slot-card:nth-child(6) { animation-delay: 0.25s; }
+.slot-card:nth-child(7) { animation-delay: 0.3s; }
+.slot-card:nth-child(8) { animation-delay: 0.35s; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .table-head, .table-row { grid-template-columns: 40px 1fr 72px; }
@@ -495,7 +509,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </section>
 
 <!-- TOP TABLE -->
-<section style="padding: 56px 0 0" data-aos="fade-up">
+<section style="padding: 56px 0 0">
   <div class="section-wrap">
     <h2 class="section-title">📊 Рейтинг слотов EVA Casino по RTP</h2>
     <p class="section-subtitle">Данные от сертифицированных провайдеров · Март 2026</p>
@@ -569,7 +583,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </section>
 
 <!-- SLOT CARDS SECTION -->
-<section style="padding: 56px 0" data-aos="fade-up">
+<section style="padding: 56px 0">
   <div class="section-wrap">
     <h2 class="section-title">🎰 Подробные обзоры топ-слотов</h2>
     <p class="section-subtitle">Механика, стратегии и секреты самых популярных игр в EVA Casino</p>
@@ -856,12 +870,189 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
         </div>
       </div>
 
+      <!-- 7. ZEUS VS HADES: GODS OF WAR -->
+      <div class="slot-card">
+        <span class="slot-badge badge-new">⚡ Новинка 2026</span>
+        <div class="slot-card-header">
+          <div class="slot-thumb" style="background:linear-gradient(135deg,#1e3a8a,#7c3aed);font-size:32px;display:flex;align-items:center;justify-content:center;">⚡</div>
+          <div class="slot-info">
+            <div class="slot-name">Zeus vs Hades: Gods of War</div>
+            <div class="slot-provider">Pragmatic Play · Мифология</div>
+          </div>
+        </div>
+        <div class="slot-stats">
+          <div class="stat-item">
+            <div class="stat-label">RTP</div>
+            <div class="stat-value green">96,07%</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Макс. выигрыш</div>
+            <div class="stat-value gold">×15 000</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Барабаны</div>
+            <div class="stat-value">5×3</div>
+          </div>
+        </div>
+        <div class="slot-body">
+          <div class="volatility-wrap">
+            <div class="volatility-label">Волатильность: Высокая</div>
+            <div class="volatility-bar"><div class="volatility-fill vol-high"></div></div>
+          </div>
+          <p class="slot-desc">
+            <strong>Zeus vs Hades: Gods of War</strong> — эпическое противостояние двух богов Олимпа от Pragmatic Play. Два мира на одном поле: синий (Зевс) и красный (Аид) запускают разные бонусные механики. Уникальная система двойных множителей — при столкновении богов в одном раунде множители перемножаются. Максимальный выигрыш ×15 000 ставки достигается в бонусном раунде «Битва богов» с нарастающими вихрями множителей.
+          </p>
+          <div class="slot-features">
+            <span class="feature-tag">Двойные множители</span>
+            <span class="feature-tag">Битва богов</span>
+            <span class="feature-tag">Каскады</span>
+            <span class="feature-tag">Buy Bonus</span>
+            <span class="feature-tag">×15 000</span>
+          </div>
+          <div class="slot-cta">
+            <a href="https://gameshowrlight.com/drqcqyoqp" class="btn-play">⚡ Играть</a>
+            <a href="https://gameshowrlight.com/drqcqyoqp" class="btn-demo">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. AVIA MASTERS 2 -->
+      <div class="slot-card">
+        <span class="slot-badge badge-new">✈️ Новинка</span>
+        <div class="slot-card-header">
+          <div class="slot-thumb" style="background:linear-gradient(135deg,#1e3a5f,#dc2626);font-size:32px;display:flex;align-items:center;justify-content:center;">✈️</div>
+          <div class="slot-info">
+            <div class="slot-name">Avia Masters 2</div>
+            <div class="slot-provider">BGaming · Авиация</div>
+          </div>
+        </div>
+        <div class="slot-stats">
+          <div class="stat-item">
+            <div class="stat-label">RTP</div>
+            <div class="stat-value green">96,71%</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Макс. выигрыш</div>
+            <div class="stat-value gold">×10 000</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Барабаны</div>
+            <div class="stat-value">5×3</div>
+          </div>
+        </div>
+        <div class="slot-body">
+          <div class="volatility-wrap">
+            <div class="volatility-label">Волатильность: Высокая</div>
+            <div class="volatility-bar"><div class="volatility-fill vol-high"></div></div>
+          </div>
+          <p class="slot-desc">
+            <strong>Avia Masters 2</strong> — сиквел популярного авиационного слота от BGaming с улучшенной механикой и новыми бонусными режимами. Тема биплана и воздушных гонок 1920-х. Ключевая механика — <strong>режим Free Flight</strong>: при 3+ Scatter-символах запускается бонусный раунд с летящими Wilds, которые остаются на барабанах на несколько спинов. Новая функция «Турбо-режим» ускоряет вращения и увеличивает множитель при серии выигрышей.
+          </p>
+          <div class="slot-features">
+            <span class="feature-tag">Free Flight бонус</span>
+            <span class="feature-tag">Sticky Wilds</span>
+            <span class="feature-tag">Турбо-режим</span>
+            <span class="feature-tag">×10 000</span>
+            <span class="feature-tag">BGaming</span>
+          </div>
+          <div class="slot-cta">
+            <a href="https://gameshowrlight.com/drqcqyoqp" class="btn-play">✈️ Играть</a>
+            <a href="https://gameshowrlight.com/drqcqyoqp" class="btn-demo">Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- СТАТЬЯ: ZEUS VS HADES -->
+<section style="padding:56px 0;background:var(--bg2)">
+  <div class="section-wrap">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+        <div style="width:40px;height:40px;background:linear-gradient(135deg,#1e3a8a,#7c3aed);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">⚡</div>
+        <div>
+          <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px">Полный обзор</div>
+          <h2 style="font-size:26px;font-weight:900;color:var(--white);letter-spacing:-.5px;line-height:1.1">Zeus vs Hades: Gods of War</h2>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px">
+        <span style="padding:4px 12px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);border-radius:100px;font-size:12px;color:#22c55e;font-weight:700">RTP 96,07%</span>
+        <span style="padding:4px 12px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);border-radius:100px;font-size:12px;color:#f59e0b;font-weight:700">Макс. ×15 000</span>
+        <span style="padding:4px 12px;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);border-radius:100px;font-size:12px;color:#ef4444;font-weight:700">Высокая волатильность</span>
+        <span style="padding:4px 12px;background:rgba(91,106,245,.12);border:1px solid rgba(91,106,245,.3);border-radius:100px;font-size:12px;color:#818cf8;font-weight:700">Pragmatic Play · 2025</span>
+      </div>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Концепция и сюжет</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px">Zeus vs Hades: Gods of War — это эпическое столкновение двух могущественных богов греческого пантеона. Зевс, повелитель Олимпа, против Аида, владыки подземного мира. Pragmatic Play взяли знакомую мифологическую вселенную Gates of Olympus и создали принципиально новую игровую механику на её основе. Поле разделено надвое: левая половина принадлежит Зевсу (холодные синие тона, молнии), правая — Аиду (огненные красные оттенки, потоки лавы). Это не просто эстетика — каждый бог активирует свои уникальные механики.</p>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Механика — что делает этот слот особенным</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">Ключевое отличие от Gates of Olympus — система двойных богов. В базовой игре каждый бог может активировать собственный случайный множитель на своей половине поля. Множители Зевса работают на синих символах, Аида — на красных. Когда оба бога активны одновременно — их множители перемножаются, что создаёт взрывной потенциал.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">Бонусный раунд «Битва богов» запускается при выпадении 3+ специальных Scatter. В этом режиме оба бога «сражаются» — на барабанах появляются всё более мощные множители с каждым каскадом. Множители не сбрасываются, а накапливаются в течение всего бонусного раунда. Именно здесь достигается максимальный потенциал ×15 000.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px">Функция Buy Bonus позволяет купить бонусный раунд напрямую за 100x ставки. При этом можно выбрать сторону — «купить» бонус Зевса или Аида, что влияет на стартовые множители раунда. Это уникальная механика выбора, которой нет в оригинальном Gates of Olympus.</p>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">RTP и математика</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">RTP 96,07% — чуть ниже чем у Gates of Olympus (96,5%), что объясняется увеличенным максимальным потенциалом. Высокая волатильность означает редкие, но крупные выплаты. Частота выпадения бонусного раунда — примерно 1 раз в 200–300 спинов в базовой игре.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px">Средний размер выигрыша в бонусном раунде — 50–200x ставки. Крупные хиты ×1000–×5000 случаются при совпадении нескольких факторов: высокие множители у обоих богов + каскад символов высокого номинала. Максимум ×15 000 теоретически достижим, но требует идеального стечения обстоятельств.</p>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Стратегия игры в Zeus vs Hades</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:8px"><strong style="color:var(--white)">Оптимальная ставка:</strong> 0,5–1% от банкролла за спин. При банкролле ₽10 000 — ₽50–100 за вращение. Это даёт достаточно спинов для ожидания бонусного раунда.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:8px"><strong style="color:var(--white)">Buy Bonus или ждать?</strong> Buy Bonus за 100x имеет смысл при банкролле от ₽20 000. При меньших суммах лучше ждать органического выпадения — риск истощить банкролл до бонуса слишком высок.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px"><strong style="color:var(--white)">Какого бога выбрать при Buy Bonus?</strong> По ранним данным игроков, бонус Зевса даёт чуть более стабильные результаты, бонус Аида — более волатильный с выше пиком. Выбор зависит от вашей склонности к риску.</p>
+
+      <div style="text-align:center">
+        <a href="https://gameshowrlight.com/drqcqyoqp" style="display:inline-flex;align-items:center;gap:8px;padding:14px 36px;border-radius:10px;background:linear-gradient(135deg,var(--accent-light),var(--accent));color:#fff;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 6px 24px var(--accent-glow)">⚡ Играть в Zeus vs Hades в EVA Casino</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- СТАТЬЯ: AVIA MASTERS 2 -->
+<section style="padding:56px 0;background:var(--bg)">
+  <div class="section-wrap">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+        <div style="width:40px;height:40px;background:linear-gradient(135deg,#1e3a5f,#dc2626);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">✈️</div>
+        <div>
+          <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px">Полный обзор</div>
+          <h2 style="font-size:26px;font-weight:900;color:var(--white);letter-spacing:-.5px;line-height:1.1">Avia Masters 2</h2>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px">
+        <span style="padding:4px 12px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);border-radius:100px;font-size:12px;color:#22c55e;font-weight:700">RTP 96,71%</span>
+        <span style="padding:4px 12px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);border-radius:100px;font-size:12px;color:#f59e0b;font-weight:700">Макс. ×10 000</span>
+        <span style="padding:4px 12px;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);border-radius:100px;font-size:12px;color:#ef4444;font-weight:700">Высокая волатильность</span>
+        <span style="padding:4px 12px;background:rgba(91,106,245,.12);border:1px solid rgba(91,106,245,.3);border-radius:100px;font-size:12px;color:#818cf8;font-weight:700">BGaming · 2026</span>
+      </div>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Что нового по сравнению с первой частью</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px">Avia Masters 2 — долгожданный сиквел от BGaming, который взял всё лучшее из оригинала и добавил несколько существенных улучшений. Тема осталась та же: воздушные гонки на бипланах в стиле 1920-х годов, ретро-эстетика, масляные моторы и кожаные шлемы пилотов. Визуальный ряд стал значительно богаче — анимации более плавные, фоновые сцены динамичные. RTP вырос с 96,48% до 96,71% — небольшое, но приятное улучшение в пользу игрока.</p>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Механика и бонусные функции</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">Базовая сетка 5×3 с 20 фиксированными линиями выплат — стандартная и понятная структура. Главная механика — Wild-символ в виде красного биплана: он замещает все символы кроме Scatter и остаётся «прилипшим» к барабану на 1–2 дополнительных спина после появления (Sticky Wild).</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">Бонусный раунд <strong style="color:var(--white)">«Free Flight»</strong> запускается при 3+ Scatter (облака с пропеллером) и даёт 10 бесплатных вращений. Ключевое улучшение по сравнению с первой частью: во время Free Flight все Wild-символы становятся Expanding Wilds — они расширяются на весь барабан. При выпадении 3+ Scatter в бонусе добавляется ещё 5 спинов.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">Новая функция <strong style="color:var(--white)">«Турбо-режим»</strong> активируется при серии 3+ выигрышей подряд в базовой игре. В этом режиме символы падают быстрее, а текущий множитель увеличивается с каждым следующим выигрышем. Это создаёт захватывающие цепочки выплат без ожидания бонусного раунда.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px">Максимальный выигрыш ×10 000 достигается в Free Flight при одновременном выпадении нескольких Expanding Wilds на высокоценных символах (золотой трофей, пилот-ас). Это реалистичная цифра — значительно чаще достижима чем ×25 000 в Sweet Bonanza 1000.</p>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Для кого подходит Avia Masters 2</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:12px">Avia Masters 2 — отличный выбор для игроков, которым нравится высокая волатильность, но хочется чего-то более «дружелюбного» чем Gates of Olympus. Бонусный раунд выпадает заметно чаще (примерно 1 раз в 150–200 спинов), средний выигрыш в нём более стабилен.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px">Слот хорошо подходит для игры с бонусом EVA Casino: механика Sticky Wilds и Free Flight отлично засчитывается в вейджер (100% от Pragmatic Play и большинства провайдеров). RTP 96,71% — один из лучших показателей среди новинок 2026 года.</p>
+
+      <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:12px">Стратегия для Avia Masters 2</h3>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:8px"><strong style="color:var(--white)">Размер ставки:</strong> 0,5–1,5% от банкролла. Более частый выход бонуса позволяет играть чуть агрессивнее по сравнению с Gates of Olympus.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:8px"><strong style="color:var(--white)">Турбо-режим — используйте его:</strong> при активации серии выигрышей не спешите делать крупную ставку. Турбо-режим повышает множитель, но базовая ставка та же. Просто наслаждайтесь серией.</p>
+      <p style="color:var(--text-dim);line-height:1.8;margin-bottom:20px"><strong style="color:var(--white)">Ретриггер в Free Flight:</strong> при выпадении Scatter в бонусе добавляется 5 спинов. Это самый ценный момент — с Expanding Wilds на барабанах каждый дополнительный спин может дать крупную выплату. Не прерывайте сессию в момент Free Flight.</p>
+
+      <div style="text-align:center">
+        <a href="https://gameshowrlight.com/drqcqyoqp" style="display:inline-flex;align-items:center;gap:8px;padding:14px 36px;border-radius:10px;background:linear-gradient(135deg,var(--accent-light),var(--accent));color:#fff;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 6px 24px var(--accent-glow)">✈️ Играть в Avia Masters 2 в EVA Casino</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- STRATEGIES SECTION -->
-<section style="padding: 0 0 56px" data-aos="fade-up">
+<section style="padding: 0 0 56px">
   <div class="section-wrap">
     <h2 class="section-title">🧠 Как выбрать слот и управлять банкроллом</h2>
     <p class="section-subtitle">Советы, которые реально работают — без мифов о «горячих» автоматах</p>
@@ -917,7 +1108,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </section>
 
 <!-- PROMO STRIP -->
-<section style="padding: 0 0 56px" data-aos="fade-up">
+<section style="padding: 0 0 56px">
   <div class="section-wrap">
     <div class="promo-strip">
       <div class="promo-left">
@@ -936,7 +1127,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </section>
 
 <!-- SEO TEXT -->
-<section style="padding: 0 0 56px" data-aos="fade-up">
+<section style="padding: 0 0 56px">
   <div class="section-wrap">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;" class="seo-grid">
 
@@ -965,7 +1156,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </section>
 
 <!-- FAQ -->
-<section style="padding: 0 0 56px" data-aos="fade-up">
+<section style="padding: 0 0 56px">
   <div class="section-wrap">
     <h2 class="section-title">❓ Часто задаваемые вопросы о слотах EVA Casino</h2>
     <p class="section-subtitle" style="margin-bottom:24px">Ответы на реальные вопросы игроков</p>
@@ -1004,7 +1195,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </section>
 
 <!-- INTERNAL LINKS -->
-<section style="padding: 0 0 64px" data-aos="fade-up">
+<section style="padding: 0 0 64px">
   <div class="section-wrap">
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;">
       <a href="/bonusy/" style="display:flex;align-items:center;gap:12px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);transition:all .2s;" class="inner-link">
@@ -1041,7 +1232,7 @@ nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.
 </div>
 
 <script>
-AOS.init({ duration: 600, once: true, offset: 60 });
+// No AOS - using pure CSS for animations
 
 function toggleFaq(el) {
   el.classList.toggle('open');
