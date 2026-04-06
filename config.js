@@ -11,7 +11,7 @@
 
 const EVA_CONFIG = {
   // ГЛАВНАЯ РЕФ-ССЫЛКА — меняй здесь при бане
-  CASINO_URL: "https://gameshowrtodusk.com/drqcqyoqp",
+  CASINO_URL: "https://gamedarkshowr.com/drqcqyoqp",
 
   // Текст кнопок (менять не обязательно)
   BTN_BONUS: "🎁 Получить 900 ФС",
