@@ -11,7 +11,7 @@
 
 const EVA_CONFIG = {
   // ГЛАВНАЯ РЕФ-ССЫЛКА — меняй здесь при бане
-  CASINO_URL: "https://ev7-flux21.com/drqcqyoqp",
+  CASINO_URL: "https://string-26eva.com/dxntblcsp",
 
   // Текст кнопок (менять не обязательно)
   BTN_BONUS: "🎁 Получить 900 ФС",
